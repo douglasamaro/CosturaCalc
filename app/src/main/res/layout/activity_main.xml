@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:backgroundTint="@color/main"
+    android:orientation="vertical"
+
+    tools:context=".Main">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/whitebar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_black"
+            android:text="CosturaCalc"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/config"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="Editar"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/settings_icon"
+            app:layout_constraintEnd_toStartOf="@+id/money"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Button
+            android:id="@+id/money"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/money_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/menu"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4526711384034283/8757162116">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/container_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:padding="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/container_scroll"
+        app:layout_constraintBottom_toTopOf="@+id/container_scroll"
+        app:layout_constraintStart_toStartOf="@+id/container_scroll"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="20dp"
+            android:paddingBottom="60dp"
+            android:paddingRight="20dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_alternates_black"
+                android:text="Olá Fulano,"
+
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/montserrat_alternates_black"
+                android:text="Vamos calcular?"
+
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/textviewtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="quanto tempo leva para fazer a peça"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/title2"
+                app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+            <EditText
+                android:id="@+id/tempo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_input"
+                android:hint="digite o tempo em minutos"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whiteclaro"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewtime"
+                app:layout_constraintTop_toBottomOf="@+id/textviewtime" />
+
+            <TextView
+                android:id="@+id/textviewtecido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="sobre o tecido base utilizado"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/hora"
+                app:layout_constraintTop_toBottomOf="@+id/hora" />
+
+            <EditText
+                android:id="@+id/pagou"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/background_input"
+                android:hint="quanto pagou R$  "
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"
+                android:padding="10dp"
+                android:textColorHint="@color/whiteclaro"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pagou"
+                app:layout_constraintTop_toTopOf="@+id/linear" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/pagou">
+
+                <EditText
+                    android:id="@+id/comprado"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_input"
+                    android:hint="quanto comprou m2"
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/whiteclaro"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="@+id/linear"
+                    app:layout_constraintStart_toStartOf="@+id/linear"
+                    app:layout_constraintEnd_toStartOf="@+id/usado"
+                     />
+
+                <EditText
+                    android:id="@+id/usado"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_input"
+                    android:hint="quanto usou m2"
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no"
+                    android:padding="10dp"
+                    android:textColorHint="@color/whiteclaro"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="@+id/linear"
+                    app:layout_constraintStart_toEndOf="@+id/comprado"
+                    app:layout_constraintEnd_toEndOf="@+id/linear"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textviewadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="tem mais algum custo adicional?"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+                app:layout_constraintTop_toTopOf="@+id/linear" />
+
+            <EditText
+                android:id="@+id/adicionais"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_input"
+                android:hint="se não tiver coloque o número 0"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whiteclaro"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewadd"
+                app:layout_constraintTop_toBottomOf="@+id/textviewadd" />
+
+            <TextView
+                android:id="@+id/textviewlucro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="quanto pretende ter de lucro?"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/adicionais"
+                app:layout_constraintTop_toBottomOf="@+id/adicionais" />
+
+            <EditText
+                android:id="@+id/lucro"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_input"
+                android:hint="coloque a porcentagem de 0 a 100"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whiteclaro"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewlucro"
+                app:layout_constraintTop_toBottomOf="@+id/textviewlucro" />
+
+            <Button
+                android:id="@+id/calcularcalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="@string/calcular"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:onClick="Calcular"
+                android:paddingRight="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:background="@drawable/background_button_gradient"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lucro"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

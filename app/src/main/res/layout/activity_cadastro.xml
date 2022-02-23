@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main"
+
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:text="Vamos definir"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:text="algumas coisas"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:text="primeiro?"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <TextView
+        android:id="@+id/textviewadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Como quer que eu te chame?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title3" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_input"
+        android:hint="digite seu nome"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:padding="10dp"
+        android:textColorHint="@color/whiteclaro"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textviewadd"
+        app:layout_constraintTop_toBottomOf="@+id/textviewadd" />
+
+    <TextView
+        android:id="@+id/textviewlucro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Quanto vale a sua hora R$?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+        <EditText
+            android:id="@+id/valorHora"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_input"
+            android:hint="digite o valor"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteclaro"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textviewlucro"
+            app:layout_constraintTop_toBottomOf="@+id/textviewlucro" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/valorHora"
+            app:layout_constraintStart_toStartOf="parent">
+            <TableRow
+                android:onClick="Tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mudartela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não sabe calcular a hora?"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/mudartelaaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clique aqui"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:onClick="Tutorial"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mudartela"/>
+            </TableRow>
+
+        </TableLayout>
+
+    <Button
+        android:id="@+id/mybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="avançar"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:onClick="Salvar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:background="@drawable/background_button_gradient"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mudartelaaction"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saiba que ao deletar o aplicativo, todos"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mybtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="os dados salvos também serão apagados"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
