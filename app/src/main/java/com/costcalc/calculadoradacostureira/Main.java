@@ -81,43 +81,46 @@ public class Main extends AppCompatActivity {
 
     // requisitar o anuncio
     private void loadRewardedAd() {
+           try {
+               RewardedAd.load(this, "ca-app-pub-4526711384034283/3731194005",
+                       adRequest, new RewardedAdLoadCallback() {
+                           @Override
+                           public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                               // Handle the error.
+                               Log.d(TAG, loadAdError.getMessage());
+                               mRewardedAd = null;
+                           }
 
-        RewardedAd.load(this, "ca-app-pub-4526711384034283/3731194005",
-                adRequest, new RewardedAdLoadCallback() {
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error.
-                        Log.d(TAG, loadAdError.getMessage());
-                        mRewardedAd = null;
-                    }
+                           @Override
+                           public void onAdLoaded(@NonNull RewardedAd rewardedAd) {
+                               mRewardedAd = rewardedAd;
+                               Log.d(TAG, "Douglas " + "Ad was loaded.");
+                               mRewardedAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                                   @Override
+                                   public void onAdShowedFullScreenContent() {
+                                       // Called when ad is shown.
+                                       Log.d(TAG, "Douglas " + "Ad was shown.");
+                                   }
 
-                    @Override
-                    public void onAdLoaded(@NonNull RewardedAd rewardedAd) {
-                        mRewardedAd = rewardedAd;
-                        Log.d(TAG, "Douglas " + "Ad was loaded.");
-                        mRewardedAd.setFullScreenContentCallback(new FullScreenContentCallback() {
-                            @Override
-                            public void onAdShowedFullScreenContent() {
-                                // Called when ad is shown.
-                                Log.d(TAG, "Douglas " + "Ad was shown.");
-                            }
+                                   @Override
+                                   public void onAdFailedToShowFullScreenContent(AdError adError) {
+                                       // Called when ad fails to show.
+                                       Log.d(TAG, "Douglas " + "Ad failed to show.");
+                                   }
 
-                            @Override
-                            public void onAdFailedToShowFullScreenContent(AdError adError) {
-                                // Called when ad fails to show.
-                                Log.d(TAG, "Douglas " + "Ad failed to show.");
-                            }
-
-                            @Override
-                            public void onAdDismissedFullScreenContent() {
-                                // Called when ad is dismissed.
-                                // Set the ad reference to null so you don't show the ad a second time.
-                                Log.d(TAG, "Douglas " + "Ad was dismissed.");
-                                loadRewardedAd();
-                            }
-                        });
-                    }
-                });
+                                   @Override
+                                   public void onAdDismissedFullScreenContent() {
+                                       // Called when ad is dismissed.
+                                       // Set the ad reference to null so you don't show the ad a second time.
+                                       Log.d(TAG, "Douglas " + "Ad was dismissed.");
+                                       loadRewardedAd();
+                                   }
+                               });
+                           }
+                       });
+           } catch (Exception e) {
+               Log.d(TAG, "Douglas " + e);
+           }
     }
 
     // chamada anuncio e mudar tela para resultado, se sucesso

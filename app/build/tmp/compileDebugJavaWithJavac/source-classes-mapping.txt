@@ -1,3 +1,7 @@
+com/costcalc/calculadoradacostureira/BuildConfig.java
+ com.costcalc.calculadoradacostureira.BuildConfig
+com/costcalc/calculadoradacostureira/Tutorial.java
+ com.costcalc.calculadoradacostureira.Tutorial
 com/costcalc/calculadoradacostureira/MudarTela.java
  com.costcalc.calculadoradacostureira.MudarTela
 com/costcalc/calculadoradacostureira/SplashScreen.java
@@ -17,7 +21,3 @@ com/costcalc/calculadoradacostureira/Main.java
  com.costcalc.calculadoradacostureira.Main$2
  com.costcalc.calculadoradacostureira.Main$2$1
  com.costcalc.calculadoradacostureira.Main$3
-com/costcalc/calculadoradacostureira/Tutorial.java
- com.costcalc.calculadoradacostureira.Tutorial
-com/costcalc/calculadoradacostureira/BuildConfig.java
- com.costcalc.calculadoradacostureira.BuildConfig
