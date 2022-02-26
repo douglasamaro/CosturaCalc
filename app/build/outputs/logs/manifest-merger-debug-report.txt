@@ -68,7 +68,7 @@ INJECTED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml
 INJECTED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:2:1-45:12
 INJECTED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml
 		INJECTED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -147,32 +147,32 @@ ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:13
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:15:13-67
 	android:name
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:14:13-69
-activity#com.costcalc.calculadoradacostureira.Tutorial
+activity#com.costcalc.costuracalc.Tutorial
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:16:9-19:49
 	android:hardwareAccelerated
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:19:13-47
 	android:exported
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:17:13-73
-activity#com.costcalc.calculadoradacostureira.Cadastro
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:17:13-61
+activity#com.costcalc.costuracalc.Cadastro
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:21:13-73
-activity#com.costcalc.calculadoradacostureira.Resultados
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:21:13-61
+activity#com.costcalc.costuracalc.Resultados
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:24:13-75
-activity#com.costcalc.calculadoradacostureira.SplashScreen
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:24:13-63
+activity#com.costcalc.costuracalc.SplashScreen
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:26:9-34:20
 	android:exported
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:27:13-77
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:27:13-65
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
@@ -183,14 +183,14 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:32:27-74
-activity#com.costcalc.calculadoradacostureira.Main
+activity#com.costcalc.costuracalc.Main
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:35:9-38:49
 	android:hardwareAccelerated
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:38:13-47
 	android:exported
 		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:36:13-69
+		ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:36:13-57
 meta-data#preloaded_fonts
 ADDED from /home/douglas/Desktop/CosturaCalc/app/src/main/AndroidManifest.xml:40:9-42:57
 	android:resource

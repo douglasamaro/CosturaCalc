@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.costcalc.calculadoradacostureira",
+  "applicationId": "com.costcalc.costuracalc",
   "variantName": "debug",
   "elements": []
 }

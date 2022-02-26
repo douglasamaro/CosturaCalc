@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.costcalc.calculadoradacostureira">
+    package="com.costcalc.costuracalc">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:hardwareAccelerated="true"
@@ -14,17 +14,17 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Tutorial"
+            android:name="com.costcalc.costuracalc.Tutorial"
             android:exported="false"
             android:hardwareAccelerated="true"/>
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Cadastro"
+            android:name="com.costcalc.costuracalc.Cadastro"
             android:exported="false" />
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Resultados"
+            android:name="com.costcalc.costuracalc.Resultados"
             android:exported="false" />
         <activity
-            android:name="com.costcalc.calculadoradacostureira.SplashScreen"
+            android:name="com.costcalc.costuracalc.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Main"
+            android:name="com.costcalc.costuracalc.Main"
             android:exported="true"
             android:hardwareAccelerated="true"/>
 

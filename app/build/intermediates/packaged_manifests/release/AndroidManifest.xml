@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.costcalc.calculadoradacostureira"
+    package="com.costcalc.costuracalc"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -47,17 +47,17 @@
             android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Tutorial"
+            android:name="com.costcalc.costuracalc.Tutorial"
             android:exported="false"
             android:hardwareAccelerated="true" />
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Cadastro"
+            android:name="com.costcalc.costuracalc.Cadastro"
             android:exported="false" />
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Resultados"
+            android:name="com.costcalc.costuracalc.Resultados"
             android:exported="false" />
         <activity
-            android:name="com.costcalc.calculadoradacostureira.SplashScreen"
+            android:name="com.costcalc.costuracalc.SplashScreen"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +66,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.costcalc.calculadoradacostureira.Main"
+            android:name="com.costcalc.costuracalc.Main"
             android:exported="true"
             android:hardwareAccelerated="true" />
 
@@ -82,7 +82,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.costcalc.calculadoradacostureira.mobileadsinitprovider"
+            android:authorities="com.costcalc.costuracalc.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -102,7 +102,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.costcalc.calculadoradacostureira.androidx-startup"
+            android:authorities="com.costcalc.costuracalc.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

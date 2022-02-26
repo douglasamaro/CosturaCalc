@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.costcalc.calculadoradacostureira"
+        applicationId "com.costcalc.costuracalc"
         minSdk 21
         targetSdk 32
         versionCode 1

@@ -4,7 +4,7 @@
     "type": "BUNDLE",
     "kind": "RegularFile"
   },
-  "applicationId": "com.costcalc.calculadoradacostureira",
+  "applicationId": "com.costcalc.costuracalc",
   "variantName": "release",
   "elements": [
     {

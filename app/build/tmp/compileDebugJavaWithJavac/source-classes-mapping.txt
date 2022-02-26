@@ -1,23 +1,23 @@
-com/costcalc/calculadoradacostureira/BuildConfig.java
- com.costcalc.calculadoradacostureira.BuildConfig
-com/costcalc/calculadoradacostureira/Tutorial.java
- com.costcalc.calculadoradacostureira.Tutorial
-com/costcalc/calculadoradacostureira/MudarTela.java
- com.costcalc.calculadoradacostureira.MudarTela
-com/costcalc/calculadoradacostureira/SplashScreen.java
- com.costcalc.calculadoradacostureira.SplashScreen
- com.costcalc.calculadoradacostureira.SplashScreen$1
-com/costcalc/calculadoradacostureira/Cadastro.java
- com.costcalc.calculadoradacostureira.Cadastro
-com/costcalc/calculadoradacostureira/Resultados.java
- com.costcalc.calculadoradacostureira.Resultados
- com.costcalc.calculadoradacostureira.Resultados$1
- com.costcalc.calculadoradacostureira.Resultados$2
- com.costcalc.calculadoradacostureira.Resultados$2$1
- com.costcalc.calculadoradacostureira.Resultados$3
-com/costcalc/calculadoradacostureira/Main.java
- com.costcalc.calculadoradacostureira.Main
- com.costcalc.calculadoradacostureira.Main$1
- com.costcalc.calculadoradacostureira.Main$2
- com.costcalc.calculadoradacostureira.Main$2$1
- com.costcalc.calculadoradacostureira.Main$3
+com/costcalc/costuracalc/Main.java
+ com.costcalc.costuracalc.Main
+ com.costcalc.costuracalc.Main$1
+ com.costcalc.costuracalc.Main$2
+ com.costcalc.costuracalc.Main$2$1
+ com.costcalc.costuracalc.Main$3
+com/costcalc/costuracalc/Tutorial.java
+ com.costcalc.costuracalc.Tutorial
+com/costcalc/costuracalc/SplashScreen.java
+ com.costcalc.costuracalc.SplashScreen
+ com.costcalc.costuracalc.SplashScreen$1
+com/costcalc/costuracalc/Resultados.java
+ com.costcalc.costuracalc.Resultados
+ com.costcalc.costuracalc.Resultados$1
+ com.costcalc.costuracalc.Resultados$2
+ com.costcalc.costuracalc.Resultados$2$1
+ com.costcalc.costuracalc.Resultados$3
+com/costcalc/costuracalc/Cadastro.java
+ com.costcalc.costuracalc.Cadastro
+com/costcalc/costuracalc/BuildConfig.java
+ com.costcalc.costuracalc.BuildConfig
+com/costcalc/costuracalc/MudarTela.java
+ com.costcalc.costuracalc.MudarTela
